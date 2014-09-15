@@ -34,13 +34,6 @@ p {
 
 #text {
 	height: 24px;
-	width: 75%;
+	width: 100%;
 	padding: 0;
-}
-
-#button {
-	height: 24px;
-	width: 23%;
-	padding: 0;
-	float: right;
 }
