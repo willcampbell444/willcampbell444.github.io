@@ -21,31 +21,36 @@ var verbs = {
 	"courir": ["cours", "cours", "court", "courons", "courez", "courent"],
 	"dire": ["dis", "dis", "dit", "disons", "dites", "disent"],
 	"cueillir": ["cueille", "cueilles", "cueille", "cueillons", "cueillez", "cueillent"],
-	"croire": ["crois", "crois", "croit", "croyons", "croyez", "croient"]
-};
+	"croire": ["crois", "crois", "croit", "croyons", "croyez", "croient"]};
 var pronoms = ["je", "tu", "il", "nous", "vous", "ils"];
 var infinitifs;
 var infinitif;
 var num;
 var right = 0;
-var wrong = 0;
+var total = 0;
+var check;
 
 function getVerb(question, answer) {
 	console.log(answer);
 	if(answer == verbs[infinitif][num]) {
-		right += 1;
 		document.getElementById('input').style.borderColor = "#474747"
 		nextVerb();
 	}
 	else {
-		wrong += 1;
-		document.getElementById("score").innerHTML = right + " right, " + wrong + " wrong";
+		check += 1
 		document.getElementById('input').style.borderColor = "#8F0000"
 	}
 };
 
 function nextVerb() {
-	document.getElementById("score").innerHTML = right + " right, " + wrong + " wrong";
+	if(check == 0) {
+		right += 1
+	}
+	if(total > 0) {
+	document.getElementById("score").innerHTML = right + " out of " + total + " - " + Math.round((right/total)*100) + "%";
+	}
+	check = 0;
+	total += 1;
 	infinitifs = Object.keys(verbs);
 	infinitif = infinitifs[Math.floor(Math.random()*infinitifs.length)];
 	num = Math.floor(Math.random()*6);
