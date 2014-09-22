@@ -2,26 +2,28 @@
 // right = "#474747"
 
 var verbs = {
-	"avoir": ["ai", "as", "a", "avons", "avez", "ont"],
+	"ecrire": ["écris", "écris", "écrit", "ecrivons", "écrivez", "écrivent"],
 	"être": ["suis", "es", "est", "sommes", "êtes", "sont"],
-	"acquérir": ["acquiers", "acquiers", "acquiert", "acquérons", "acquérez", "acquièrent"],
-	"aller": ["vais", "vas", "va", "allons", "allez", "vont"],
-	"apprendre": ["apprends", "apprends", "apprend", "apprenons", "apprenez", "apprennent"],
-	"battre": ["bats", "bats", "bat", "battons", "battez", "battent"],
-	"comprendre": ["comprends", "comprends", "comprend", "comprenons", "comprenez", "comprennent"],
-	"conduire": ["conduis", "conduis", "conduit", "conduisons", "conduisez", "conduisent"],
-	"coudre": ["couds", "couds", "coud", "cousons", "cousez", "cousent"],
-	"craindre": ["crains", "crains", "craint", "craignons", "craignez", "craignent"],
-	"devoir": ["dois", "dois", "doit", "devons", "devez", "doivent"],
-	"devenir": ["deviens", "deviens", "devient", "devenons", "devenez", "deviennent"],
-	"asseoir (e)": ["assieds", "assieds", "assied", "asseyons", "asseyez", "asseyent"],
-	"asseoir (o)": ["assois", "assois", "assoit", "assoyons", "assoyez", "assoient"],
-	"boire": ["bois", "bois", "boit", "buvons", "buvez", "boivent"],
-	"connaître": ["connais", "connais", "connaît", "connaissons", "connaissez", "connaissent"],
-	"courir": ["cours", "cours", "court", "courons", "courez", "courent"],
-	"dire": ["dis", "dis", "dit", "disons", "dites", "disent"],
-	"cueillir": ["cueille", "cueilles", "cueille", "cueillons", "cueillez", "cueillent"],
-	"croire": ["crois", "crois", "croit", "croyons", "croyez", "croient"]};
+	"envoyer": ["envoie", "envoies", "envoie", "envoyons", "envoyez", "envoient"],
+	"faire": ["fais", "fais", "fait", "faisons", "faites", "font"],
+	"fuir": ["fuis", "fuis", "fuit", "fuyons", "fuyez", "fuient"],
+	"haïr": ["hais", "hais", "hait", "haïssons", "haïssez", "haïssent"],
+	"lire": ["lis", "lis", "lit", "lisons", "lisez", "lisent"],
+	"mettre": ["mets", "mets", "met", "mettons", "mettez", "mettent"],
+	"mourir": ["meurs", "meurs", "meurt", "mourons", "mourez", "meurent"],
+	"naitre": ["nais", "nais", "naît", "naissons", "naissez", "naissent"],
+	"ouvrir": ["ouvre", "ouvres", "ouvre", "ouvrons", "ouvrez", "ouvrent"],
+	"partir": ["pars", "pars", "part", "partons", "partez", "partent"],
+	"plaire": ["plais", "plais", "plaît", "plaisons", "plaisez", "plaisent"],
+	"pouvoir": ["peux", "peux", "peut", "pouvons", "pouvez", "peuvent"],
+	"prendre": ["prends", "prends", "prend", "prenons", "prenez", "prennent"],
+	"recevoir": ["reçois", "reçois", "reçoit", "recevons", "recevez", "reçoivent"],
+	"résoudre": ["résous", "résous", "résout", "résolvons", "résolvez", "résolvent"],
+	"rire": ["ris", "ris", "rit", "rions", "riez", "rient"],
+	"rontre": ["romps", "romps", "rompt", "rompons", "rompez", "rompent"],
+	"savoir": ["sais", "sais", "sait", "savons", "savez", "savent"],
+	"sortir": ["sors", "sors", "sort", "sortons", "sortez", "sortent"],
+	"suivre": ["suis", "suis", "suit", "suivons", "suivez", "suivent"]};
 var pronoms = ["je", "tu", "il", "nous", "vous", "ils"];
 var infinitifs;
 var infinitif;
