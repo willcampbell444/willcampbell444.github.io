@@ -17,6 +17,13 @@ body {
 	border-color: #474747;
 }
 
+.option {
+	margin-top: 16;
+	margin-bottom: 0;
+	width: 100%;
+	padding: 0;
+}
+
 h1 {
 	font-size: 24pt;
 	padding-top: 10px;

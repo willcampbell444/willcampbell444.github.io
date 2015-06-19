@@ -1,5 +1,5 @@
 verbs = {
-    "Imparfait": {
+    "Indicatif - Imparfait": {
         "vaincre": [
             "vainquais",
             "vainquais",
@@ -769,7 +769,7 @@ verbs = {
             "valaient"
         ]
     },
-    "Passé antérieur": {
+    "Indicatif - Passé Antérieur": {
         "sécher": [
             "eus séché",
             "eus séché",
@@ -1539,7 +1539,7 @@ verbs = {
             "eurent valu"
         ]
     },
-    "Présent Conditionelle": {
+    "Conditionelle - Présent": {
         "vaincre": [
             "vaincrais",
             "vaincrais",
@@ -2309,7 +2309,7 @@ verbs = {
             "vaudraient"
         ]
     },
-    "Passé Conditionelle": {
+    "Conditionelle - Passé": {
         "vaincre": [
             "aurais vaincu",
             "aurais vaincu",
@@ -3079,7 +3079,7 @@ verbs = {
             "auraient valu"
         ]
     },
-    "Present": {
+    "Indicatif - Present": {
         "vaincre": [
             "vaincs",
             "vaincs",
@@ -3857,7 +3857,7 @@ verbs = {
             "valent"
         ]
     },
-    "Passé simple": {
+    "Indicatif - Passé Simple": {
         "vaincre": [
             "vainquis",
             "vainquis",
@@ -4627,7 +4627,7 @@ verbs = {
             "valurent"
         ]
     },
-    "Passé composé": {
+    "Indicatif - Passé Composé": {
         "vaincre": [
             "ai vaincu",
             "as vaincu",
@@ -5397,7 +5397,7 @@ verbs = {
             "ont valu"
         ]
     },
-    "Présent Subjunctive": {
+    "Subjunctive - Présent": {
         "vaincre": [
             "vainque",
             "vainques",
@@ -6167,7 +6167,7 @@ verbs = {
             "vaillent"
         ]
     },
-    "Imparfait Subjunctive": {
+    "Subjunctive - Imparfait": {
         "vaincre": [
             "vainquisse",
             "vainquisses",
@@ -6937,7 +6937,7 @@ verbs = {
             "valussent"
         ]
     },
-    "Plus-que-parfait": {
+    "Indicatif - Plus-que-parfait": {
         "vaincre": [
             "avais vaincu",
             "avais vaincu",
@@ -7707,105 +7707,7 @@ verbs = {
             "avaient valu"
         ]
     },
-    "Participe passé": {
-        "vaincre": "vaincu",
-        "sécher": "séché",
-        "étinceler": "étincelé",
-        "appuyer": "appuyé",
-        "corriger": "corrigé",
-        "pouvoir": "pu",
-        "payer": "payé",
-        "promener": "promené",
-        "lire": "lu",
-        "naître": "né",
-        "vouloir": "voulu",
-        "voir": "vu",
-        "nettoyer": "nettoyé",
-        "placer": "placé",
-        "haïr": "haï",
-        "lever": "levé",
-        "sortir": "sorti",
-        "essayer": "essayé",
-        "asseoir": "assis",
-        "récupérer": "récupéré",
-        "mettre": "mis",
-        "amener": "amené",
-        "inquiéter": "inquiété",
-        "protéger": "protégé",
-        "apprendre": "appris",
-        "appeler": "appelé",
-        "déplacer": "déplacé",
-        "charger": "chargé",
-        "épousseter": "épousseté",
-        "plaire": "plu",
-        "battre": "battu",
-        "cueillir": "cueilli",
-        "préférer": "préféré",
-        "mener": "mené",
-        "suivre": "suivi",
-        "divorcer": "divorcé",
-        "rejeter": "rejeté",
-        "essuyer": "essuyé",
-        "être": "été",
-        "rappeler": "rappelé",
-        "acheter": "acheté",
-        "ouvrir": "ouvert",
-        "écrire": "écrit",
-        "conduire": "conduit",
-        "boire": "bu",
-        "devoir": "dû",
-        "financer": "financé",
-        "coudre": "cousu",
-        "changer": "changé",
-        "dire": "dit",
-        "suggérer": "suggéré",
-        "élever": "élevé",
-        "faire": "fait",
-        "acquérir": "acquis",
-        "devenir": "devenu",
-        "vêtir": "vêtu",
-        "réconcilier": "réconcilié",
-        "savoir": "su",
-        "menacer": "menacé",
-        "balayer": "balayé",
-        "annoncer": "annoncé",
-        "rire": "ri",
-        "vivre": "vécu",
-        "aller": "allé",
-        "marier": "marié",
-        "venir": "venu",
-        "mourir": "mort",
-        "fuir": "fui",
-        "connaître": "connu",
-        "jeter": "jeté",
-        "avoir": "eu",
-        "enlever": "enlevé",
-        "céder": "cédé",
-        "opérer": "opéré",
-        "posséder": "possédé",
-        "résoudre": "résolu",
-        "courir": "couru",
-        "taire": "tu",
-        "confier": "confié",
-        "partir": "parti",
-        "espérer": "espéré",
-        "croire": "cru",
-        "tenir": "tenu",
-        "prendre": "pris",
-        "comprendre": "compris",
-        "employer": "employé",
-        "célébrer": "célébré",
-        "peser": "pesé",
-        "recevoir": "reçu",
-        "arranger": "arrangé",
-        "craindre": "craint",
-        "effacer": "effacé",
-        "accélérer": "accéléré",
-        "envoyer": "envoyé",
-        "lancer": "lancé",
-        "valoir": "valu"
-    },
-    "Futur": {
+    "Indicatif - Futur Simple": {
         "vaincre": [
             "vaincrai",
             "vaincras",
@@ -8575,7 +8477,7 @@ verbs = {
             "vaudront"
         ]
     },
-    "Futur antérieur": {
+    "Indicatif - Futur Antérieur": {
         "vaincre": [
             "aurai vaincu",
             "auras vaincu",
@@ -9345,7 +9247,7 @@ verbs = {
             "auront valu"
         ]
     },
-    "Passé Subjunctive": {
+    "Subjunctive - Passé": {
         "vaincre": [
             "aie vaincu",
             "aies vaincu",
@@ -10115,7 +10017,7 @@ verbs = {
             "aient valu"
         ]
     },
-    "Plus-que-parfait Subjunctive": {
+    "Subjunctive - Plus-que-parfait": {
         "vaincre": [
             "eusse vaincu",
             "eusses vaincu",
