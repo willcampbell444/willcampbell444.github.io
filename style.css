@@ -82,7 +82,7 @@ p {
 }
 
 h1 {
-	font-size: 280%;
+	font-size: 800%;
 	text-align: center;
 	margin-bottom: 10;
 	margin-top: 10;
@@ -92,12 +92,11 @@ h1 {
 select, input, button, progress {
 	display: block;
 	margin-bottom: 1em;
-	font-size: 135%;
+	font-size: 500%;
 	width: 90%;
 	margin-left: 5%;
 	margin-right: auto;
 	/*background-color: #FFF;*/
-	height: 1.5em;
 }
 
 progress[value]::-webkit-progress-bar {
