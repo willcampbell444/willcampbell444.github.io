@@ -102,12 +102,20 @@ function codeAddress() {
 			poop = document.getElementById("poop");
 			poop.removeChild(document.getElementById('tense_choice'));
 			poop.removeChild(document.getElementById('verbs'));
+			poop.removeChild(document.getElementById('submit'));
 
 			input_line = document.createElement('input');
 			input_line.id = 'text';
 			input_line.type = 'text';
+			input_line.autocorrect = "off"
+			input_line.autocapitalize = "off"
 			input_line.autocomplete = 'off';
 			poop.appendChild(input_line)
+
+			submit_button = document.createElement('input');
+			submit_button.id = 'submit';
+			submit_button.type = 'submit';
+			poop.appendChild(submit_button)
 
 			progress_bar = document.createElement('progress');
 			progress_bar.id = 'progress';
