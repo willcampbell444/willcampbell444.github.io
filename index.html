@@ -1,23 +1,24 @@
 <html>
 	<head>
-		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="turtle.ico">
 		<title>Présent Subjunctive</title>
 		<script src="verbs.js"></script>
 		<script src="main.js"></script>
 		<script src="jquery.js"></script>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="signup.css">
 	</head>
 	<body>
-		<div id='all'>
-			<h1 id="tense">French Verbs</h1>
-			<div id="input">
-				<form id="poop" action=''>
-					<select id="tense_choice" class="option"></br></select>
-					<input id="verbs" class="option" type='number', value='15' min='1'></input>
-					<input id="submit" type='submit'></input>
-				</form>
-			</div>
+		<div class="container" id='all'>
+			<h1 class="form-signin-heading" id="tense">French Verbs</h1>
+			<form id="input" class="form-signin" action=''>
+				<select id="tense_choice" class="form_control"></br></select>
+				<input class="form_control" id="verbs" type='number' value='15' min='1'></input>
+				<input class="btn btn-lg btn-primary btn-block" id="submit" type='submit'></input>
+			</form>
 		</div>
 	</body>
 </html>

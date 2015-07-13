@@ -28,7 +28,7 @@ function nextVerb() {
 	attempts = 0;
 
 	if (round == 1 && word != maximum) {
-		document.getElementById('progress').value = word.toString();
+		// document.getElementById('progress').value = word.toString();
 		word += 1
 		infinitifs = Object.keys(verbs)
 		infinitif = infinitifs[Math.floor(Math.random()*infinitifs.length)]
@@ -37,11 +37,11 @@ function nextVerb() {
 		document.getElementById('question').innerHTML = pronouns[pronoun] + ", " + infinitif
 	} else {
 		console.log(wrong)
-		if (wrong === {}) {"POSD"}
+		if (wrong === {})
 		if (Object.keys(newWrong).length && !Object.keys(wrong).length) {
 			round += 1;
-			document.getElementById('progress').max = Object.keys(newWrong).length.toString();
-			document.getElementById('progress').value = '0';
+			// document.getElementById('progress').max = Object.keys(newWrong).length.toString();
+			// document.getElementById('progress').value = '0';
 			word = 1;
 			wrong = newWrong;
 			newWrong = {};
@@ -52,7 +52,7 @@ function nextVerb() {
 			answer = wrong[key];
 			delete wrong[key];
 		} else if (Object.keys(wrong).length) {
-			document.getElementById('progress').value = word.toString();
+			// document.getElementById('progress').value = word.toString();
 			word += 1;
 			rand = Math.floor(Math.random()*Object.keys(wrong).length);
 			key = Object.keys(wrong)[rand];
@@ -60,7 +60,7 @@ function nextVerb() {
 			answer = wrong[key];
 			delete wrong[key];
 		} else {
-			document.getElementById('progress').max = '0';;
+			// document.getElementById('progress').max = '0';;
 			document.getElementById('tense').innerHTML = 'You Win';;
 			document.getElementById('question').innerHTML = "---";
 			victory = true;
@@ -99,10 +99,14 @@ function codeAddress() {
 			document.getElementById('tense').innerHTML = tense
 
 			input = document.getElementById("input");
-			poop = document.getElementById("poop");
-			poop.removeChild(document.getElementById('tense_choice'));
-			poop.removeChild(document.getElementById('verbs'));
-			poop.removeChild(document.getElementById('submit'));
+			input.removeChild(document.getElementById('tense_choice'));
+			input.removeChild(document.getElementById('verbs'));
+			input.removeChild(document.getElementById('submit'));
+
+			p = document.createElement("p");
+			p.id = "question";
+			p.innerHTML = "test";
+			input.appendChild(p)
 
 			input_line = document.createElement('input');
 			input_line.id = 'text';
@@ -110,24 +114,23 @@ function codeAddress() {
 			input_line.autocorrect = "off"
 			input_line.autocapitalize = "off"
 			input_line.autocomplete = 'off';
-			poop.appendChild(input_line)
+			input.appendChild(input_line)
+
+			// progress_bar = document.createElement('progress');
+			// progress_bar.id = 'progress';
+			// progress_bar.max = maximum.toString();
+			// progress_bar.value = '0'
+			// progress_bar.className = "option";
+			// input.appendChild(progress_bar)
+
+			div = document.createElement('div');
+			input.appendChild(div)
 
 			submit_button = document.createElement('input');
 			submit_button.id = 'submit';
 			submit_button.type = 'submit';
-			poop.appendChild(submit_button)
-
-			progress_bar = document.createElement('progress');
-			progress_bar.id = 'progress';
-			progress_bar.max = maximum.toString();
-			progress_bar.value = '0'
-			progress_bar.className = "option";
-			poop.appendChild(progress_bar)
-
-			p = document.createElement("p");
-			p.id = "question";
-			p.innerHTML = "test";
-			input.insertBefore(p, input.firstChild);
+			submit_button.className = 'btn btn-lg btn-primary btn-block';
+			input.appendChild(submit_button)
 
 			nextVerb()
 		} else {
