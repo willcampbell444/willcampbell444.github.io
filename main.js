@@ -36,16 +36,16 @@ function nextVerb() {
 		answer = verbs[infinitif][pronoun]
 		document.getElementById('question').innerHTML = pronouns[pronoun] + ", " + infinitif
 	} else {
-		console.log(wrong)
-		if (wrong === {})
+		// if (wrong === {})
 		if (Object.keys(newWrong).length && !Object.keys(wrong).length) {
+			// console.log(round+1)
 			round += 1;
 			// document.getElementById('progress').max = Object.keys(newWrong).length.toString();
 			// document.getElementById('progress').value = '0';
 			word = 1;
 			wrong = newWrong;
 			newWrong = {};
-			console.log(wrong)
+			// console.log(wrong)
 			rand = Math.floor(Math.random()*Object.keys(wrong).length);
 			key = Object.keys(wrong)[rand];
 			document.getElementById('question').innerHTML = key;
@@ -65,6 +65,8 @@ function nextVerb() {
 			document.getElementById('question').innerHTML = "---";
 			victory = true;
 		}
+
+		document.getElementById('round').innerHTML = 'Round '+round+', Word '+word
 	}
 // 	if(check == 0) {
 // 		right += 1
@@ -104,6 +106,11 @@ function codeAddress() {
 			input.removeChild(document.getElementById('submit'));
 
 			p = document.createElement("p");
+			p.id = "round";
+			p.innerHTML = "Round 1, Word 1";
+			input.appendChild(p)
+
+			p = document.createElement("p");
 			p.id = "question";
 			p.innerHTML = "test";
 			input.appendChild(p)
@@ -134,6 +141,8 @@ function codeAddress() {
 
 			nextVerb()
 		} else {
+			// console.log(newWrong)
+			// console.log(wrong)
 			if (victory) {
 				return
 			} else if (document.getElementById("text").value == answer) {
