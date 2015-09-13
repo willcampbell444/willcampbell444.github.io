@@ -30,6 +30,7 @@ function nextVerb() {
 	if (round == 1 && word != maximum) {
 		// document.getElementById('progress').value = word.toString();
 		word += 1
+		console.log(word)
 		infinitifs = Object.keys(verbs)
 		infinitif = infinitifs[Math.floor(Math.random()*infinitifs.length)]
 		pronoun = Math.floor(Math.random()*5)
@@ -65,9 +66,10 @@ function nextVerb() {
 			document.getElementById('question').innerHTML = "---";
 			victory = true;
 		}
-
-		document.getElementById('round').innerHTML = 'Round '+round+', Word '+word
 	}
+	
+	document.getElementById('round').innerHTML = 'Round '+round+', Word '+word
+
 // 	if(check == 0) {
 // 		right += 1
 // 	}
